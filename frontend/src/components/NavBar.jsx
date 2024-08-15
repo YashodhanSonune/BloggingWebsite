@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <div className="fixed w-full px-[1rem] py-8 flex justify-between text-zinc-700 item-center bg-zinc-200">
+    <div className="w-full px-[1rem] py-8 flex justify-between text-zinc-700 item-center bg-zinc-200">
         {/* <div className="icon flex px-8">
             <h1>SVG</h1>
         </div> */}
