@@ -1,6 +1,6 @@
 import React from 'react'
 
-function NavBar() {
+function NavBar({onSignInClick}) {
   return (
     <div className="w-full px-[1rem] py-8 flex justify-between text-zinc-700 item-center bg-zinc-200">
         {/* <div className="icon flex px-8">
@@ -17,7 +17,9 @@ function NavBar() {
                 <button className="border-[1px] hover:bg-zinc-700 hover:text-zinc-200 border-zinc-700 rounded-2xl px-4 py-2 bg-zinc-200 text-zinc-700">
                     About Us
                 </button>
-                <button className="border-[1px] hover:bg-zinc-700 hover:text-zinc-200 border-zinc-700 rounded-2xl px-4 py-2 bg-zinc-200 text-zinc-700">
+                <button 
+                    onClick={onSignInClick}
+                    className="border-[1px] hover:bg-zinc-700 hover:text-zinc-200 border-zinc-700 rounded-2xl px-4 py-2 bg-zinc-200 text-zinc-700">
                     Sign In
                 </button>
             </div>

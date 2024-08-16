@@ -1,12 +1,18 @@
 import React from 'react'
 
-function SignIn() {
+function SignIn({onClose}) {
   return (
-    <div className="flex items-center justify-center">
-        <div className="flex bg-zinc-200 w-1/4 rounded-lg flex-col justify-center px-8 py-12 border-zinc-500">
+    <div className="signin flex items-center justify-center">
+        <div className="flex bg-zinc-500 w-1/4 rounded-lg flex-col justify-center px-8 py-12 border-zinc-500">
+            <div className="flex justify-end pb-14">
+                <button 
+                    onClick={onClose}>
+                        <svg className="h-8 w-8 text-zinc-500 hover:text-zinc-700"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="15" y1="9" x2="9" y2="15" />  <line x1="9" y1="9" x2="15" y2="15" /></svg>
+                </button>
+            </div>
             <div>
-                <h2 className="mt-10 text-center text-3xl font-semibold font-oswald leading-9 text-zinc-800">
-                    Sign In
+                <h2 className="mt-10 text-center text-3xl font-gloria leading-9 text-zinc-700">
+                    DoppelBlogger
                 </h2>
             </div>
             <div className="mt-10">
@@ -34,7 +40,7 @@ function SignIn() {
                     </div>
                     <div className="flex items-center justify-center">
                         <button 
-                            type="submit" className="flex border-[1px] border-zinc-700 font-oswald w-1/3 justify-center rounded-xl mt-10 bg-zinc-200 px-3 py-1.5 text-xl leading-6 text-zinc-700 shadow-sm hover:bg-zinc-700 hover:text-zinc-100 focus:outline-none">Submit
+                            type="submit" className="flex border-[1px] border-zinc-700 font-oswald w-1/3 justify-center rounded-xl mt-10 bg-zinc-200 px-3 py-1.5 font-semibold text-xl leading-6 text-zinc-700 shadow-sm hover:bg-zinc-700 hover:text-zinc-200 focus:outline-none">Sign In
                         </button>
                     </div>
                 </form>
