@@ -3,8 +3,8 @@ import React from 'react'
 function SignIn({onClose}) {
   return (
     <div className="signin flex items-center justify-center">
-        <div className="flex bg-zinc-500 w-1/4 rounded-lg flex-col justify-center px-8 py-12 border-zinc-500">
-            <div className="flex justify-end pb-14">
+        <div className="flex bg-zinc-300 w-1/4 rounded-lg flex-col justify-center px-8 py-12 border-zinc-500">
+            <div className="flex justify-end pb-12">
                 <button 
                     onClick={onClose}>
                         <svg className="h-8 w-8 text-zinc-500 hover:text-zinc-700"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="10" />  <line x1="15" y1="9" x2="9" y2="15" />  <line x1="9" y1="9" x2="15" y2="15" /></svg>
