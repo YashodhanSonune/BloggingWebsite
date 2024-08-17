@@ -18,7 +18,7 @@ function App() {
     <div className="w-full min-h-screen bg-zinc-200 relative">
       <div className={`${isSignInOpen ? 'blur-sm' : ' '}`}>
         <NavBar onSignInClick={handleSignInOpen}/>
-        {/* <Home /> */}
+        <Home />
       </div>
       {isSignInOpen && (
         <div className="">
