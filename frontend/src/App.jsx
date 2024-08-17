@@ -15,16 +15,14 @@ function App() {
   }
 
   return (
-    <div className="w-full min-h-screen bg-zinc-200 relative">
-      <div className={`${isSignInOpen ? 'blur-sm' : ' '}`}>
+    <div className="w-full min-h-screen relative bg-[url('./images/MainSorry.png')] bg-blend-soft-light bg-cover bg-repeat-y bg-gray-300">
         <NavBar onSignInClick={handleSignInOpen}/>
-        <Home />
-      </div>
-      {isSignInOpen && (
-        <div className="">
-          <SignIn onClose={handleSignInClose}/>
-        </div>
-      )}
+        {/* <Home /> */}
+        {isSignInOpen && (
+          <div className="">
+            <SignIn onClose={handleSignInClose}/>
+          </div>
+        )}
     </div>
   )
 }
