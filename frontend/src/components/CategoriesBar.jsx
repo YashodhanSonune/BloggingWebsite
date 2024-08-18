@@ -24,9 +24,15 @@ function CategoriesBar() {
   ];
 
   return (
-    <div className="w-full flex items-center h-16 text-oswald font-semibold text-zinc-700 bg-gray-300">
+    <div className="w-full flex items-center h-16 text-oswald font-semibold text-zinc-700 bg-slate-300">
         <div className="relative w-full">
             <button className="pl-8 pr-12">
+                For You
+            </button>
+            <button className="pr-12">
+                Following
+            </button>
+            <button className="pr-12">
                 Trending
             </button>
             <button>
@@ -42,7 +48,7 @@ function CategoriesBar() {
             </svg>
         </button>
         {dropDownOpen && (
-          <div className="absolute right-0 mt-72 w-48 bg-gray-200 rounded-lg shadow-lg max-h-60 overflow-y-auto">
+          <div className="absolute right-0 mt-72 w-48 bg-slate-200 rounded-lg shadow-lg max-h-60 overflow-y-auto">
             {categories.map((category, index) => (
               <a key={index} href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
                 {category}

@@ -22,7 +22,7 @@ function App() {
         <Filler />
         <CategoriesBar />
         <Filler />
-        <div className="w-full min-h-screen bg-[url('./images/MainSorry.png')] bg-blend-soft-light bg-cover bg-repeat-y bg-gray-300">
+        <div className="w-full min-h-screen bg-[url('./images/MainSorry.png')] bg-blend-soft-light bg-cover bg-repeat-y bg-slate-300">
 
         </div>
         {/* <Home /> */}

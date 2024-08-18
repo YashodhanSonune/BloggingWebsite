@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavBar({onSignInClick}) {
   return (
-    <div className="w-full px-4 py-4 flex justify-between text-black item-center bg-gray-200">
+    <div className="w-full px-4 py-4 flex justify-between text-black item-center bg-slate-300">
         {/* <div className="icon flex px-8">
             <h1>SVG</h1>
         </div> */}
@@ -14,7 +14,7 @@ function NavBar({onSignInClick}) {
                 Create Your DoppelBlogger
             </button> */}
             <div className="flex gap-4 font-bold text-oswald">
-                <button className="border-[1px] hover:bg-zinc-700 hover:text-white border-zinc-700 rounded-2xl px-4 py-1 text-black">
+                <button className="transition-colors duration-100 ease-in border-[1px] hover:bg-zinc-700 hover:text-white border-zinc-700 rounded-2xl px-4 text-black">
                     About Us
                 </button>
                 <button 
