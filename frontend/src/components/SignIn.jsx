@@ -11,7 +11,7 @@ function SignIn({onClose}) {
                 </button>
             </div>
             <div className="flex justify-center items-center">
-                <img className="relative h-30 w-30" src="./images/MainSorry.png" alt="Logo" />
+                <img className="relative h-[150px] w-[150px]" src="./images/MainSorry.png" alt="Logo" />
             </div>
             <div className="mt-10">
                 <form className="space-y-6" action="#" method="POST">

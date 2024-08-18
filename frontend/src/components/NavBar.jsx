@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavBar({onSignInClick}) {
   return (
-    <div className="w-full px-[1rem] py-8 flex justify-between text-black item-center">
+    <div className="w-full px-4 py-4 flex justify-between text-black item-center bg-gray-200">
         {/* <div className="icon flex px-8">
             <h1>SVG</h1>
         </div> */}
