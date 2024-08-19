@@ -4,6 +4,7 @@ import Home from './components/Home'
 import SignIn from './components/SignIn'
 import CategoriesBar from './components/CategoriesBar';
 import Filler from './components/Filler';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   const [isSignInOpen, setIsSignInOpen] = useState(false);
@@ -17,15 +18,14 @@ function App() {
   }
 
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full min-h-screen relative bg-[url('./images/MainSorry.png')] bg-blend-soft-light bg-cover bg-repeat-y bg-slate-300">
         <NavBar onSignInClick={handleSignInOpen}/>
         <Filler />
         <CategoriesBar />
         <Filler />
         <div className="w-full min-h-screen bg-[url('./images/MainSorry.png')] bg-blend-soft-light bg-cover bg-repeat-y bg-slate-300">
-
+          <Home />
         </div>
-        {/* <Home /> */}
         {isSignInOpen && (
           <div className="">
             <SignIn onClose={handleSignInClose}/>

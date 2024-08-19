@@ -15,11 +15,14 @@ function NavBar({onSignInClick}) {
             </button> */}
             <div className="flex gap-4 font-bold text-oswald">
                 <button className="transition-colors duration-100 ease-in border-[1px] hover:bg-zinc-700 hover:text-white border-zinc-700 rounded-2xl px-4 text-black">
+                    Home
+                </button>
+                <button className="transition-colors duration-100 ease-in border-[1px] hover:bg-zinc-700 hover:text-white border-zinc-700 rounded-2xl px-4 text-black">
                     About Us
                 </button>
                 <button 
                     onClick={onSignInClick}
-                    className="border-[1px] hover:bg-zinc-700 hover:text-white border-zinc-700 rounded-2xl px-4 py-1 text-black">
+                    className="transition-colors duration-100 ease-in border-[1px] hover:bg-zinc-700 hover:text-white border-zinc-700 rounded-2xl px-4 py-1 text-black">
                     Sign In
                 </button>
             </div>
