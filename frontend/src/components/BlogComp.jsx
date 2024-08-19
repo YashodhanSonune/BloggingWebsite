@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogComp = ({ title, body, author, isFirst }) => {
+const BlogComp = ({ title, body, author, category, isFirst }) => {
   return (
     <div
       className={`${
@@ -17,6 +17,16 @@ const BlogComp = ({ title, body, author, isFirst }) => {
         </div>
       </div>
       <p className="line-clamp-4">{body}</p>
+      <div className="mt-4">
+        {category.map((category, index) => (
+          <span
+            key={index}
+            className="bg-slate-200 text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg"
+          >
+            {category}
+          </span>
+        ))}
+      </div>
       <hr className="mt-4 border-zinc-400" />
     </div>
   );

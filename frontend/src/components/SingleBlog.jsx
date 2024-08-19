@@ -15,7 +15,7 @@ const SingleBlog = () => {
       {isPending && <div className="font-oswald text-center">Loading...</div>}
       {error && <div>{error}</div>}
       {blog && (
-        <article className="flex w-full h-screen px-14">
+        <article className="flex h-screen px-32">
           <div>
             <h2 className="font-oswald text-6xl text-center">{blog.title}</h2>
             <p className="font-oswald text-center mt-2 mb-6">

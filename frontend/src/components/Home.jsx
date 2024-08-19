@@ -21,6 +21,7 @@ function Home() {
             title={blog.title}
             body={blog.body}
             author={blog.author}
+            category={blog.category}
             isFirst={index === 0}
           />
         </Link>
