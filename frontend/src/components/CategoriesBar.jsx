@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CategoriesBar() {
+function CategoriesBar({ onCategorySelect }) {
   const [dropDownOpen, setDropDownOpen] = useState(false);
   const [activeButton, setActiveButton] = useState("");
 
@@ -10,6 +10,12 @@ function CategoriesBar() {
 
   const handleClick = (buttonName) => {
     setActiveButton(buttonName);
+    onCategorySelect("");
+  };
+
+  const handleCategoryClick = (category) => {
+    onCategorySelect(category);
+    setDropDownOpen(false);
   };
 
   const categories = [
@@ -89,6 +95,7 @@ function CategoriesBar() {
             <a
               key={index}
               href="#"
+              onClick={() => handleCategoryClick(category)}
               className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
             >
               {category}

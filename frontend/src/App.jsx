@@ -16,8 +16,6 @@ function App() {
         <div className="content">
           <Switch>
             <Route exact path="/">
-              <CategoriesBar />
-              <Filler />
               <Home />
             </Route>
             <Route exact path="/signin">
